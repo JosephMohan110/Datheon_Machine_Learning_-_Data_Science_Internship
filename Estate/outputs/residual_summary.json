@@ -12,9 +12,9 @@
     "within_50000_usd": 0.6366279069767442
   },
   "Lasso": {
-    "mean_residual": 799.9817679695974,
-    "median_residual": -8812.313467493106,
-    "residual_std": 69154.8492715209,
+    "mean_residual": 799.9817679695938,
+    "median_residual": -8812.31346749328,
+    "residual_std": 69154.84927152088,
     "within_50000_usd": 0.6293604651162791
   }
 }
