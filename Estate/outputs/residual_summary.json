@@ -1,0 +1,20 @@
+{
+  "OLS": {
+    "mean_residual": 572.7555249125589,
+    "median_residual": -10127.828825205404,
+    "residual_std": 68685.54466140617,
+    "within_50000_usd": 0.6366279069767442
+  },
+  "Ridge": {
+    "mean_residual": 579.5811809632853,
+    "median_residual": -10079.99471359099,
+    "residual_std": 68693.20919470832,
+    "within_50000_usd": 0.6366279069767442
+  },
+  "Lasso": {
+    "mean_residual": 799.9817679695974,
+    "median_residual": -8812.313467493106,
+    "residual_std": 69154.8492715209,
+    "within_50000_usd": 0.6293604651162791
+  }
+}

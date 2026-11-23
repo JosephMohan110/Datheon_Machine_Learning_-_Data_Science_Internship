@@ -1,0 +1,55 @@
+{
+  "dataset": "data.csv",
+  "rows": 20640,
+  "feature_columns": [
+    "longitude",
+    "latitude",
+    "housing_median_age",
+    "total_rooms",
+    "total_bedrooms",
+    "population",
+    "households",
+    "median_income",
+    "ocean_proximity"
+  ],
+  "target": "median_house_value",
+  "train_rows": 16512,
+  "test_rows": 4128,
+  "test_size": 0.2,
+  "random_state": 42,
+  "cross_validation_folds": 5,
+  "alpha_grid": [
+    0.001,
+    0.002,
+    0.005,
+    0.01,
+    0.02
+  ],
+  "missing_values_by_column": {
+    "longitude": 0,
+    "latitude": 0,
+    "housing_median_age": 0,
+    "total_rooms": 0,
+    "total_bedrooms": 207,
+    "population": 0,
+    "households": 0,
+    "median_income": 0,
+    "median_house_value": 0,
+    "ocean_proximity": 0
+  },
+  "target_observed_max": 500001.0,
+  "rows_at_observed_target_max": 965,
+  "engineered_features": [
+    "rooms_per_household",
+    "bedrooms_per_room",
+    "population_per_household",
+    "income_x_latitude",
+    "income_x_longitude"
+  ],
+  "preprocessing": {
+    "numeric_imputation": "training-fold median",
+    "numeric_scaling": "StandardScaler",
+    "categorical_imputation": "training-fold most frequent",
+    "categorical_encoding": "OneHotEncoder(drop='first', handle_unknown='ignore')"
+  }
+}
